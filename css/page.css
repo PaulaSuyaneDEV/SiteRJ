@@ -7,22 +7,36 @@
     font-family: 'Oswald', sans-serif;
 
 }
+::-webkit-scrollbar {
+    width: 10px;
+    background-color: #38618c;
+}
+::-webkit-scrollbar-thumb {
+    background-color: #7fb7be;
+
+}
 body {
     color: white;
 }
 /* nav */
 header {
     display: flex;
-    background-color: #bc6c25;
+    background-color: #38618c;
     justify-content: space-between;
     padding: 15px;
     font-weight: bold;
     height: 10vh;
     align-items: center;
+    position: fixed;
+    width: 100vw;
+    z-index: 2;
 }
 header h1 {
     text-transform: uppercase;
     font-size: 30px;
+}
+.menu-mobile {
+    display: none;
 }
 ul {
     display: flex;
@@ -37,11 +51,17 @@ a{
     font-variant: small-caps;
     font-size: 20px;
 }
+nav a:hover {
+    background-color: #fefae0;
+    color: #38618c;
+    padding: 7px;
+    border-radius: 10px;
+}
 
 /* box-1*/
 .box-1 {
     background-image: url(../img/photo-1483729558449-99ef09a8c325.avif);
-    height: 90vh;
+    height: 100vh;
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -50,29 +70,31 @@ a{
     position: absolute;
     top: 240px;
     left: 100px;
-    color: #283618;
-    background-color: lightyellow;
+    color: darkblue;
     font-size: 80px;
-    background-color: transparent;
+    border-radius: 10px;
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0));
     
 }
 /* box 2*/
 .box-2{
     display: flex;
-    color: #283618;
-    background-color: #fefae0;
+    color: black;
+    background-color: #7fb7be;
     width: 100%;
     min-height: 75vh;
-    padding: 50px;
+    padding: 65px 30px 60px;
+
 }
 .sub-box21 {
     width: 50%;
     height: 100%;
 }
 .sub-box21 img {
-    height: 420px;
+    height: 450px;
     width: 600px;
     padding-top: 20px;
+   
 }
 .sub-box22 {
     width: 50%;
@@ -84,7 +106,7 @@ a{
     padding-bottom: 10px;
     text-align: center;
     text-transform: uppercase;
-    font-size: 40px;
+    font-size: 50px;
 }
 .sub-box22 p {
     text-align: justify;
@@ -92,15 +114,150 @@ a{
     font-size: 16px;
 }
 /*box-3*/
-.box-3 {
-    background-color: #606c38;
-}
-/* */
 
+.box-3 {
+    background-color: #4D4DFF;
+    padding: 50px 0 60px;
+
+}
+
+.box-3 h1 {
+    text-align: center;
+    font-size: 50px;
+    padding: 30px 0 ;
+    text-transform: uppercase;
+
+}
+
+.swiper {
+    background-color: white;
+    color: black;
+    width: 900px;
+}
+.swiper h1 {
+font-size: 45px;
+}
+.swiper p {
+    margin-top: 20px;
+    font-size: 16px;
+    text-align: justify;
+    line-height: 1.5em;
+    padding: 10px 50px;
+}
+.swiper-slide img {
+    width: 50vw;
+    display: block;
+    margin: auto;
+}
+
+/* box-4 */
+.box-4 {
+    background-color: #d3f3ee;
+    padding: 50px 0 60px;
+
+}
+.box-4 h1 {
+    text-align: center;
+    color: black;
+    padding: 20px 0;
+    text-transform: uppercase;
+    font-size: 50px;
+}
+iframe {
+    display: block;
+    margin: auto;
+    width: 70%;
+    padding: 10px 0 40px;
+}
+/* box-5 */
+
+.box-5 {
+    background-color: #7fb7be;
+    color: black;
+    text-align: center;
+    padding: 50px 0 60px;
+
+}
+.box-5 h1 {
+    font-size: 50px;
+    padding: 20px 0 30px;
+    text-transform: uppercase;
+}
+
+.box-cards {
+   display: flex;
+   justify-content: space-around;
+   align-items: center;
+   padding-bottom: 30px;
+}
+.text-card {
+    display: none;
+}
+ .box-cards h1 {
+    padding: 15px 6px;
+    font-size: 25px;
+    font-variant: small-caps;
+    border-radius: 20px 20px 0px 0px;
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0));
+
+}
+.box-card1 {
+    background-image: url(../img/artederua.jpg) ;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    height: 300px;
+    width: 250px;
+    border-radius: 20px;
+}
+.box-card1:hover .text-card{
+    display: block;
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.1));
+    font-size: 16px;
+    text-align: justify;
+    padding: 8px 8px;
+    font-weight: bold;
+}
+.box-card2 {
+    background-image: url(../img/feijoada.jpg) ;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    height: 300px;
+    width: 250px;
+    border-radius: 20px;
+}
+.box-card2:hover .text-card{
+    display: block;
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.1));
+    font-size: 16px;
+    text-align: justify;
+    padding: 8px 8px;
+    font-weight: bold;
+}
+.box-card3 {
+    background-image: url(../img/samba.jpeg) ;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    height: 300px;
+    width: 250px;
+    border-radius: 20px;
+}
+
+.box-card3:hover .text-card{
+    display: block;
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.2));
+    font-size: 16px;
+    text-align: justify;
+    padding: 8px 8px;
+    font-weight: bold;
+    border-radius: 10px;
+}
 /* footer */
 
 footer {
-    background-color: #36494e;
+    background-color: #38618c;
     text-align: center;
 }
 footer a , p{

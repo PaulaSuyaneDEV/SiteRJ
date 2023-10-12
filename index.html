@@ -6,29 +6,33 @@
     <title>Rio de Janeiro</title>
     <link rel="stylesheet" href="css/page.css">
     <link rel="stylesheet" href="css/responsive.css">
+    <link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
+/>
 </head>
 <body>
-    <nav>
+   
         <header>
             <h1>Rio de Janeiro</h1>
-            
-            <nav>
+            <img src="img/menu.hamburger.png" alt="menu" class="menu-mobile">
+            <nav id="menu-nav">
                 <ul>
-                    <li><a href="" >História</a></li>
-                    <li><a href="" >Pontos turísticos</a></li>
-                    <li><a href="" >Localização</a></li>
-                    <li><a href="" >Curiosidades</a></li>
+                    <li><a href="#history" >História</a></li>
+                    <li><a href="#turismo" >Pontos turísticos</a></li>
+                    <li><a href="#localizacao" >Localização</a></li>
+                    <li><a href="#culture" >Cultura</a></li>
 
                 </ul>
             </nav>
         </header>
-    </nav>
+    
     <div class="container">
         <div class="box-1">
             <h1>Rio de Janeiro</h1>
         </div>
         <main>
-            <div class="box-2">
+            <div class="box-2" id="history">
                     <div class="sub-box21">
                      <img src="img/history2.avif" alt="">
                     </div>
@@ -41,20 +45,83 @@
                         No entanto, a cidade também enfrentou desafios, incluindo questões de desigualdade social e violência. Hoje, o Rio de Janeiro continua sendo uma metrópole fascinante, conhecida por sua cultura diversificada e seu cenário único, onde o passado e o presente se entrelaçam em uma mistura única de tradição e modernidade.</p>
                     </div>
             </div>
-            <div class="box-3">
+            <div class="box-3" id="turismo">
                 <h1>Pontos turísticos</h1>
-                <div class="carrossel-imagem">
-
+               
+                <div class="box-img">
+                    <div class="swiper">
+                        <div class="swiper-wrapper">
+                          <div class="swiper-slide">
+                            <h1>Arcos da Lapa</h1>
+                            <img src="img/arcos da lapa.png">
+                            <p>Os Arcos da Lapa, localizados no Rio de Janeiro, são uma estrutura icônica em arcos de estilo romano que serve como um aqueduto histórico e um marco turístico famoso, atraindo visitantes devido à sua arquitetura impressionante e à vida noturna agitada na região.</p></div>
+                          <div class="swiper-slide">
+                            <h1>Bondinho Pão de Açúcar</h1><img src="img/Bondinho.png" >
+                        <p>O Bondinho do Pão de Açúcar, situado no Rio de Janeiro, é um teleférico icônico que leva os visitantes a uma vista deslumbrante da cidade e da Baía de Guanabara. Com duas paradas, oferece panoramas incríveis do Morro da Urca e do Pão de Açúcar, sendo um dos principais pontos turísticos da cidade.</p></div>
+                          <div class="swiper-slide">
+                            <h1>Cristo Redentor</h1><img src="img/cristoredentor.png" >
+                        <p>O Cristo Redentor é uma colossal estátua de Jesus Cristo, localizada no Corcovado, Rio de Janeiro. Com 30 metros de altura, é um ícone do Brasil e oferece vistas espetaculares da cidade e da Baía de Guanabara a partir do seu mirante. Foi inaugurado em 1931 e é um importante destino turístico e religioso.</p></div>
+                          <div class="swiper-slide">
+                            <h1>Escadaria Selarón</h1>
+                            <img src="img/Escadaria.png" >
+                        <p>A Escadaria Selarón é uma famosa escadaria localizada no bairro de Santa Teresa, no Rio de Janeiro. Ela é conhecida por seus núcleos vibrantes e mosaicos únicos, que foram criados pelo artista Jorge Selarón ao longo de várias décadas. A escadaria se tornou uma atração turística popular e é um tributo artístico à cidade e à cultura brasileira.</p></div>
+                          <div class="swiper-slide">
+                            <h1>Estádio Maracaña</h1><img src="img/maracana.png" >
+                        <p>O Estádio do Maracanã, localizado no Rio de Janeiro, é um dos estádios de futebol mais icônicos do mundo. Foi palco da final da Copa do Mundo de 1950, conhecido como o "Maracanazo", e de outros eventos esportivos e musicais de renome. Com capacidade para mais de 78 mil pessoas, é um ícone do esporte e da cultura brasileira.</p></div>
+                          <div class="swiper-slide">
+                            <h1>Praia de Copacabana</h1><img src="img/PRAIA.png" >
+                            <p>A Praia de Copacabana é uma das mais famosas do mundo, localizada no Rio de Janeiro, Brasil. Com cerca de 4 km de extensão, sua icônica calçada de mosaicos ondulados, o calçadão, é um local de lazer e contemplação. A praia oferece belas vistas, uma atmosfera animada e é um símbolo da cultura carioca.</p>
+                        </div>
+                        </div>
+                    
+                        <div class="swiper-button-prev"></div>
+                        <div class="swiper-button-next"></div>
+                      
+                      
+                      </div>
                 </div>
+            
+                </div>
+            <div class="box-4" id="localizacao">
+                   <h1>Localização</h1>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d940804.1718932282!2d-44.105434308878834!3d-22.912769753886522!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9bde559108a05b%3A0x50dc426c672fd24e!2sRio%20de%20Janeiro%2C%20RJ!5e0!3m2!1spt-BR!2sbr!4v1696635548521!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
-            <div class="box-4"></div>
-            <div class="box-5"></div>
+            <div class="box-5" id="culture">
+              <h1>Cultura</h1>
+              <div class="box-card-main">
+                <div class="box-cards">
+                  <div class="box-card1">
+                  <h1>Arte de Rua</h1>
+                  <span class="text-card">
+                    O Rio de Janeiro é conhecido por sua vibrante cena de arte de rua. Murais e grafites coloridos podem ser encontrados em toda a cidade, expressando a criatividade e a diversidade da cultura carioca. O Bairro de Santa Teresa e a Lapa são áreas conhecidas pela sua arte de rua.
+                  </span>
+                  
+                  </div>
+                  <div class="box-card2">
+                    <h1>Feijoada</h1>
+                    <span class="text-card">
+                      A feijoada é um prato tradicional da culinária carioca. Trata-se de um ensopado de feijão preto com carne de porco, geralmente servido com arroz, couve, laranja e farofa. É uma iguaria apreciada e frequentemente consumida aos sábados.
+                    </span>
+                  </div>
+                  <div class="box-card3">
+                    <h1>Samba</h1>
+                    <span class="text-card">
+                      O samba é uma parte fundamental da cultura carioca. O Rio de Janeiro é considerado o berço do samba, e a música e a dança desempenham um papel central na vida dos cariocas. O Carnaval do Rio é um dos maiores eventos de samba do mundo, com escolas de samba competindo em desfiles elaborados.
+                    </span>
+                  </div>
+                </div>
+              </div>
+              
+            </div>
         </main>
     </div>
+    
     <footer>
         <p>Feito por <a href="" target="_blank">Paula_DEV</a></p>
-        <p>Todos os Direitos reservados</p>
+        <p>@Todos os Direitos reservados</p>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
     <script src="js/scripts.js"></script>
+
 </body>
 </html>
